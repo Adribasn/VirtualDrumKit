@@ -1,0 +1,23 @@
+
+.drum-kit {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    border: 1px solid #932432;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-row {
+    display: inline-block;
+}
+
+.second-row {
+    display: inline-block;
+}
+
+.third-row {
+    display: inline-block;
+}
