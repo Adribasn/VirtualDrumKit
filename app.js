@@ -43,11 +43,11 @@ keySeven.addEventListener('click', keySevenfunc);
 keyEight.addEventListener('click', keyEightfunc);
 keyNine.addEventListener('click', keyNinefunc);
 
+let sfx = new Audio();
 
 function keyOnefunc() {
     keyOne.style.backgroundColor = "#932432";
     keyOne.style.color = "#fff";
-    let sfx = new Audio();
     sfx.src = 'sounds/808 - Boomin.wav'
     sfx.play();
     window.setTimeout(() => {
@@ -59,7 +59,6 @@ function keyOnefunc() {
 function keyTwofunc() {
     keyTwo.style.backgroundColor = "#932432";
     keyTwo.style.color = "#fff";
-    let sfx = new Audio();
     sfx.src = 'sounds/Clap - Sauce.wav';
     sfx.play();
     window.setTimeout(() => {
@@ -71,7 +70,6 @@ function keyTwofunc() {
 function keyThreefunc() {
     keyThree.style.backgroundColor = "#932432";
     keyThree.style.color = "#fff";
-    let sfx = new Audio();
     sfx.src = 'sounds/clap (2).wav'
     sfx.play();
     window.setTimeout(() => {
@@ -83,7 +81,6 @@ function keyThreefunc() {
 function keyFourfunc() {
     keyFour.style.backgroundColor = "#932432";
     keyFour.style.color = "#fff";
-    let sfx = new Audio();
     sfx.src = 'sounds/Hi Hat - Hennesy.wav'
     sfx.play();
     window.setTimeout(() => {
@@ -95,7 +92,6 @@ function keyFourfunc() {
 function keyFivefunc() {
     keyFive.style.backgroundColor = "#932432";
     keyFive.style.color = "#fff";
-    let sfx = new Audio();
     sfx.src = 'sounds/Kick - Marnell.wav'
     sfx.play();
     window.setTimeout(() => {
@@ -107,7 +103,6 @@ function keyFivefunc() {
 function keySixfunc() {
     keySix.style.backgroundColor = "#932432";
     keySix.style.color = "#fff";
-    let sfx = new Audio();
     sfx.src = 'sounds/Open Hat - Cali.wav'
     sfx.play();
     window.setTimeout(() => {
@@ -119,7 +114,6 @@ function keySixfunc() {
 function keySevenfunc() {
     keySeven.style.backgroundColor = "#932432";
     keySeven.style.color = "#fff";
-    let sfx = new Audio();
     sfx.src = 'sounds/open hat 1.wav';
     sfx.play();
     window.setTimeout(() => {
@@ -131,7 +125,6 @@ function keySevenfunc() {
 function keyEightfunc() {
     keyEight.style.backgroundColor = "#932432";
     keyEight.style.color = "#fff";
-    let sfx = new Audio();
     sfx.src = 'sounds/perc (3).wav';
     sfx.play();
     window.setTimeout(() => {
@@ -143,7 +136,6 @@ function keyEightfunc() {
 function keyNinefunc() {
     keyNine.style.backgroundColor = "#932432";
     keyNine.style.color = "#fff";
-    let sfx = new Audio();
     sfx.src = 'sounds/snare (4).wav';
     sfx.play();
     window.setTimeout(() => {
