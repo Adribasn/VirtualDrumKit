@@ -1,23 +1,94 @@
+body {
+    font-family: 'Quicksand';
+    font-weight: 500;
+    background-color: #fff;
+}
 
 .drum-kit {
     height: 500px;
     width: 500px;
     margin: auto;
     margin-top: 100px;
-    border: 1px solid #932432;
+    border: 2px solid #932432;
+    border-radius: 18px;
     display: flex;
     justify-content: center;
+    align-content: center;
+    box-shadow: 0 0 40px rgba(0,0,0,.2);
+}
+
+.key {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #932432;
+    border-radius: 18px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    transition: .2s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 .first-row {
-    display: inline-block;
+    
 }
 
 .second-row {
-    display: inline-block;
+   
 }
 
+
 .third-row {
-    display: inline-block;
+
+}
+
+
+#key-one {
+
+}
+
+#key-two {
+    
+}
+
+#key-three {
+    
+}
+
+#key-four {
+    
+}
+
+#key-five {
+    
+}
+
+#key-six {
+    
+}
+
+#key-seven {
+    
+}
+
+#key-eight {
+    
+}
+
+#key-nine {
+    
+}
+
+@keyframes animate-key{
+    0%,
+    100% {
+        scale: 120%;
+    }
+    50% {
+        scale: 100%;
+    }
 }
