@@ -2,6 +2,7 @@ body {
     font-family: 'Quicksand';
     font-weight: 500;
     background-color: #fff;
+    user-select: none;
 }
 
 .drum-kit {
