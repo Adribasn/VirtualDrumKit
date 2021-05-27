@@ -13,7 +13,7 @@ const keyNine = document.getElementById('key-nine');
 
 const selected = document.querySelector('.selected');
 const optionsContainer = document.querySelector('.options-container');
-const options = document.querySelector('.option');
+const options = document.querySelectorAll('.option');
 
 let keyOneSource = '';
 let keyTwoSource = '';
@@ -167,8 +167,11 @@ selected.addEventListener('click', function() {
 options.forEach(o => {
     o.addEventListener('click', () => {
         selected.innerHTML = o.innerHTML;
+        selected.style.backgroundColor = '#fff';
+        selected.style.color = '#000';
+        optionsContainer.classList.remove('active');
 
-        if (o.innerHTML == 'Trap') {
+        if (selected.innerHTML === 'Trap') {
             keyOneSource = 'sounds/Trap/808 - Boomin.wav';
             keyTwoSource = 'sounds/Trap/Clap - Sauce.wav';
             keyThreeSource = 'sounds/Trap/clap (2).wav';
@@ -178,6 +181,27 @@ options.forEach(o => {
             keySevenSource = 'sounds/Trap/open hat 1.wav';
             keyEightSource = 'sounds/Trap/perc (3).wav';
             keyNineSource = 'sounds/Trap/snare (4).wav';
+        }  else if (selected.innerHTML === 'Retro') {
+            keyOneSource = 'sounds/Retro/Clap.wav';
+            keyTwoSource = 'sounds/Retro/Cow.wav';
+            keyThreeSource = 'sounds/Retro/D_FX3.WAV';
+            keyFourSource = 'sounds/Retro/FX2.wav';
+            keyFiveSource = 'sounds/Retro/Kick3.wav';
+            keySixSource = 'sounds/Retro/Noisy_Snare_3.WAV';
+            keySevenSource = 'sounds/Retro/Perc1.wav';
+            keyEightSource = 'sounds/Retro/Rev_2.WAV';
+            keyNineSource = 'sounds/Retro/SynthTom03.wav';
+        } else if (selected.innerHTML === 'Drill') {
+            keyOneSource = 'sounds/Drill/BVKER - Drillers 808 - 10 - (F).wav';
+            keyTwoSource = 'sounds/Drill/BVKER - Drillers Clap 02.wav';
+            keyThreeSource = 'sounds/Drill/BVKER - Drillers Clap 04.wav';
+            keyFourSource = 'sounds/Drill/BVKER - Drillers Closed Hat - 06.wav';
+            keyFiveSource = 'sounds/Drill/BVKER - Drillers Kick - 06.wav';
+            keySixSource = 'sounds/Drill/BVKER - Drillers Open Hat - 03.wav';
+            keySevenSource = 'sounds/Drill/BVKER - Drillers Perc 03.wav';
+            keyEightSource = 'sounds/Drill/BVKER - Drillers Snare - 08.wav';
+            keyNineSource = 'sounds/Drill/BVKER - Drillers Snare - 10.wav';
         }
     })
 })
+
