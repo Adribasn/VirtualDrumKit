@@ -192,7 +192,7 @@ options.forEach(o => {
             keyEightSource = 'sounds/Retro/Rev_2.WAV';
             keyNineSource = 'sounds/Retro/SynthTom03.wav';
         } else if (selected.innerHTML === 'Drill') {
-            keyOneSource = 'sounds/Drill/BVKER - Drillers 808 - 10 - (F).wav';
+            keyOneSource = 'sounds/Drill/BVKER - Drillers Kick - 01.wav';
             keyTwoSource = 'sounds/Drill/BVKER - Drillers Clap 02.wav';
             keyThreeSource = 'sounds/Drill/BVKER - Drillers Clap 04.wav';
             keyFourSource = 'sounds/Drill/BVKER - Drillers Closed Hat - 06.wav';
@@ -201,6 +201,46 @@ options.forEach(o => {
             keySevenSource = 'sounds/Drill/BVKER - Drillers Perc 03.wav';
             keyEightSource = 'sounds/Drill/BVKER - Drillers Snare - 08.wav';
             keyNineSource = 'sounds/Drill/BVKER - Drillers Snare - 10.wav';
+        } else if (selected.innerHTML === 'Rock') {
+            keyOneSource = 'sounds/Rock/36-Ludwig26Kick-5.wav';
+            keyTwoSource = 'sounds/Rock/38-PearlSnare-2.wav';
+            keyThreeSource = 'sounds/Rock/38-PorkpieSnare-4.wav';
+            keyFourSource = 'sounds/Rock/41-Pearl16FloorTom-4.wav';
+            keyFiveSource = 'sounds/Rock/42-SabianRockHatClosed-2.wav';
+            keySixSource = 'sounds/Rock/45-Pearl12Tom-3.wav';
+            keySevenSource = 'sounds/Rock/46-SabianRockHatSemiOpen-1.wav';
+            keyEightSource = 'sounds/Rock/48-SabianRockHatSwish-1.wav';
+            keyNineSource = 'sounds/Rock/50-SabianAA16CrashChoke.wav';
+        } else if (selected.innerHTML === 'Dubstep') {
+            keyOneSource = 'sounds/Dubstep/Claps (4).wav';
+            keyTwoSource = 'sounds/Dubstep/Effect 1.wav';
+            keyThreeSource = 'sounds/Dubstep/Effect 5.wav';
+            keyFourSource = 'sounds/Dubstep/Effect 11.wav';
+            keyFiveSource = 'sounds/Dubstep/FX (1).wav';
+            keySixSource = 'sounds/Dubstep/FX (8).wav';
+            keySevenSource = 'sounds/Dubstep/FX (9).wav';
+            keyEightSource = 'sounds/Dubstep/Kick   (3).wav';
+            keyNineSource = 'sounds/Dubstep/Tom (2).wav';
+        } else if (selected.innerHTML === 'Dr.Dre') {
+            keyOneSource = 'sounds/DrDre/2Pac Guitar.wav';
+            keyTwoSource = 'sounds/DrDre/2Pac Keys.wav';
+            keyThreeSource = 'sounds/DrDre/6SO0C158.wav';
+            keyFourSource = 'sounds/DrDre/50 eminem guitar.wav';
+            keyFiveSource = 'sounds/DrDre/55 (3).wav';
+            keySixSource = 'sounds/DrDre/BOOM.WAV';
+            keySevenSource = 'sounds/DrDre/Dre hit3.wav';
+            keyEightSource = 'sounds/DrDre/Dre Keyz.wav';
+            keyNineSource = 'sounds/DrDre/EMN Snare 1.wav';
+        } else if (selected.innerHTML === 'Kanye West') {
+            keyOneSource = 'sounds/KanyeWest/B (14).wav';
+            keyTwoSource = 'sounds/KanyeWest/B (17).wav';
+            keyThreeSource = 'sounds/KanyeWest/B (18).wav';
+            keyFourSource = 'sounds/KanyeWest/B (20).wav';
+            keyFiveSource = 'sounds/KanyeWest/P (1).wav';
+            keySixSource = 'sounds/KanyeWest/S (7).wav';
+            keySevenSource = 'sounds/KanyeWest/S (10).wav';
+            keyEightSource = 'sounds/KanyeWest/S (18).wav';
+            keyNineSource = 'sounds/KanyeWest/S (20).wav';
         }
     })
 })
