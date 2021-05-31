@@ -109,6 +109,7 @@ body {
     background-color: #932432;
     color: #fff;
 }
+
 .options-container {
     border: 2px solid #932432;
     border-radius: 12px;
@@ -119,8 +120,9 @@ body {
     box-shadow: 0 0 40px rgba(0,0,0,.2);
     opacity: 0;
     transition: .3s ease-in-out;
-    height: 80px;
+    height: 0px;
     overflow-y: scroll;
+    user-select: none;
 }
 
 .options-container.active {

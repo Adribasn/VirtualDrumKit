@@ -1,19 +1,21 @@
 "use strict"
-const keyOne = document.getElementById('key-one');
-const keyTwo = document.getElementById('key-two');
-const keyThree = document.getElementById('key-three');
+const keyOne = $('#key-one');
+const keyTwo = $('#key-two');
+const keyThree = $('#key-three');
 
-const keyFour = document.getElementById('key-four');
-const keyFive = document.getElementById('key-five');
-const keySix = document.getElementById('key-six');
+const keyFour = $('#key-four');
+const keyFive = $('#key-five');
+const keySix = $('#key-six');
 
-const keySeven = document.getElementById('key-seven');
-const keyEight = document.getElementById('key-eight');
-const keyNine = document.getElementById('key-nine');
+const keySeven = $('#key-seven');
+const keyEight = $('#key-eight');
+const keyNine = $('#key-nine');
 
-const selected = document.querySelector('.selected');
-const optionsContainer = document.querySelector('.options-container');
-const options = document.querySelectorAll('.option');
+const selected = $('.selected');
+const optionsContainer = $('.options-container');
+const options = $('.option');
+
+optionsContainer.addClass('inactive');
 
 let keyOneSource = '';
 let keyTwoSource = '';
@@ -47,131 +49,132 @@ window.addEventListener('keydown', (event) => {
     }
 })
 
-keyOne.addEventListener('click', keyOnefunc);
-keyTwo.addEventListener('click', keyTwofunc);
-keyThree.addEventListener('click', keyThreefunc);
-keyFour.addEventListener('click', keyFourfunc);
-keyFive.addEventListener('click', keyFivefunc);
-keySix.addEventListener('click', keySixfunc);
-keySeven.addEventListener('click', keySevenfunc);
-keyEight.addEventListener('click', keyEightfunc);
-keyNine.addEventListener('click', keyNinefunc);
+keyOne.click(keyOnefunc);
+keyTwo.click(keyTwofunc);
+keyThree.click(keyThreefunc);
+keyFour.click(keyFourfunc);
+keyFive.click(keyFivefunc);
+keySix.click(keySixfunc);
+keySeven.click(keySevenfunc);
+keyEight.click(keyEightfunc);
+keyNine.click(keyNinefunc);
 
 let sfx = new Audio();
 
 function keyOnefunc() {
-    keyOne.style.backgroundColor = "#932432";
-    keyOne.style.color = "#fff";
+    keyOne.css("background-color","#932432");
+    keyOne.css("color","#fff");
     sfx.src = keyOneSource;
     sfx.play();
     window.setTimeout(() => {
-        keyOne.style.backgroundColor = "#fff";
-        keyOne.style.color = "#000";
+        keyOne.css("background-color","#fff");
+        keyOne.css("color","#000");
     }, 200);
 }
 
 function keyTwofunc() {
-    keyTwo.style.backgroundColor = "#932432";
-    keyTwo.style.color = "#fff";
+    keyTwo.css("background-color","#932432");
+    keyTwo.css("color","#fff");
     sfx.src = keyTwoSource;
     sfx.play();
     window.setTimeout(() => {
-        keyTwo.style.backgroundColor = "#fff";
-        keyTwo.style.color = "#000";
+        keyTwo.css("background-color","#fff");
+        keyTwo.css("color","#000");
     }, 200);
 }
 
 function keyThreefunc() {
-    keyThree.style.backgroundColor = "#932432";
-    keyThree.style.color = "#fff";
+    keyThree.css("background-color","#932432");
+    keyThree.css("color","#fff");
     sfx.src = keyThreeSource;
     sfx.play();
     window.setTimeout(() => {
-        keyThree.style.backgroundColor = "#fff";
-        keyThree.style.color = "#000";
+        keyThree.css("background-color","#fff");
+        keyThree.css("color","#000");
     }, 200);
 }
 
 function keyFourfunc() {
-    keyFour.style.backgroundColor = "#932432";
-    keyFour.style.color = "#fff";
+    keyFour.css("background-color","#932432");
+    keyFour.css("color","#fff");
     sfx.src = keyFourSource;
     sfx.play();
     window.setTimeout(() => {
-        keyFour.style.backgroundColor = "#fff";
-        keyFour.style.color = "#000";
+        keyFour.css("background-color","#fff");
+        keyFour.css("color","#000");
     }, 200);
 }
 
 function keyFivefunc() {
-    keyFive.style.backgroundColor = "#932432";
-    keyFive.style.color = "#fff";
+    keyFive.css("background-color","#932432");
+    keyFive.css("color","#fff");
     sfx.src = keyFiveSource;
     sfx.play();
     window.setTimeout(() => {
-        keyFive.style.backgroundColor = "#fff";
-        keyFive.style.color = "#000";
+        keyFive.css("background-color","#fff");
+        keyFive.css("color","#000");
     }, 200);
 }
 
 function keySixfunc() {
-    keySix.style.backgroundColor = "#932432";
-    keySix.style.color = "#fff";
+    keySix.css("background-color","#932432");
+    keySix.css("color","#fff");
     sfx.src = keySixSource;
     sfx.play();
     window.setTimeout(() => {
-        keySix.style.backgroundColor = "#fff";
-        keySix.style.color = "#000";
+        keySix.css("background-color","#fff");
+        keySix.css("color","#000");
     }, 200);
 }
 
 function keySevenfunc() {
-    keySeven.style.backgroundColor = "#932432";
-    keySeven.style.color = "#fff";
+    keySeven.css("background-color","#932432");
+    keySeven.css("color","#fff");
     sfx.src = keySevenSource;
     sfx.play();
     window.setTimeout(() => {
-        keySeven.style.backgroundColor = "#fff";
-        keySeven.style.color = "#000";
+        keySeven.css("background-color","#fff");
+        keySeven.css("color","#000");
     }, 200);
 }
 
 function keyEightfunc() {
-    keyEight.style.backgroundColor = "#932432";
-    keyEight.style.color = "#fff";
+    keyEight.css("background-color","#932432");
+    keyEight.css("color","#fff");
     sfx.src = keyEightSource;
     sfx.play();
     window.setTimeout(() => {
-        keyEight.style.backgroundColor = "#fff";
-        keyEight.style.color = "#000";
+        keyEight.css("background-color","#fff");
+        keyEight.css("color","#000");
     }, 200);
 }
 
 function keyNinefunc() {
-    keyNine.style.backgroundColor = "#932432";
-    keyNine.style.color = "#fff";
+    keyNine.css("background-color","#932432");
+    keyNine.css("color","#fff");
     sfx.src = keyNineSource;
     sfx.play();
     window.setTimeout(() => {
-        keyNine.style.backgroundColor = "#fff";
-        keyNine.style.color = "#000";
+        keyNine.css("background-color","#fff");
+        keyNine.css("color","#000");
     }, 200);
 }
 
-selected.addEventListener('click', function() {
-    optionsContainer.classList.toggle('active');
-    selected.style.backgroundColor = '#932432';
-    selected.style.color = "#fff";
+selected.click(function() {
+    selected.css("background-color","#932432");
+    selected.css("color","#fff");
+    optionsContainer.addClass('active')
 })
 
-options.forEach(o => {
-    o.addEventListener('click', () => {
-        selected.innerHTML = o.innerHTML;
-        selected.style.backgroundColor = '#fff';
-        selected.style.color = '#000';
-        optionsContainer.classList.remove('active');
+options.each(function(index, value) {
+    $(this).click(function() {
+        selected.css("background-color","#fff");
+        selected.css("color","#000");
+        selected.html($(this).text());
+        optionsContainer.removeClass('active');
 
-        if (selected.innerHTML === 'Trap') {
+
+        if (selected.text() === 'Trap') {
             keyOneSource = 'sounds/Trap/808 - Boomin.wav';
             keyTwoSource = 'sounds/Trap/Clap - Sauce.wav';
             keyThreeSource = 'sounds/Trap/clap (2).wav';
@@ -181,7 +184,7 @@ options.forEach(o => {
             keySevenSource = 'sounds/Trap/open hat 1.wav';
             keyEightSource = 'sounds/Trap/perc (3).wav';
             keyNineSource = 'sounds/Trap/snare (4).wav';
-        }  else if (selected.innerHTML === 'Retro') {
+        }  else if (selected.text() === 'Retro') {
             keyOneSource = 'sounds/Retro/Clap.wav';
             keyTwoSource = 'sounds/Retro/Cow.wav';
             keyThreeSource = 'sounds/Retro/D_FX3.WAV';
@@ -191,7 +194,7 @@ options.forEach(o => {
             keySevenSource = 'sounds/Retro/Perc1.wav';
             keyEightSource = 'sounds/Retro/Rev_2.WAV';
             keyNineSource = 'sounds/Retro/SynthTom03.wav';
-        } else if (selected.innerHTML === 'Drill') {
+        } else if (selected.text() === 'Drill') {
             keyOneSource = 'sounds/Drill/BVKER - Drillers Kick - 01.wav';
             keyTwoSource = 'sounds/Drill/BVKER - Drillers Clap 02.wav';
             keyThreeSource = 'sounds/Drill/BVKER - Drillers Clap 04.wav';
@@ -201,7 +204,7 @@ options.forEach(o => {
             keySevenSource = 'sounds/Drill/BVKER - Drillers Perc 03.wav';
             keyEightSource = 'sounds/Drill/BVKER - Drillers Snare - 08.wav';
             keyNineSource = 'sounds/Drill/BVKER - Drillers Snare - 10.wav';
-        } else if (selected.innerHTML === 'Rock') {
+        } else if (selected.text() === 'Rock') {
             keyOneSource = 'sounds/Rock/36-Ludwig26Kick-5.wav';
             keyTwoSource = 'sounds/Rock/38-PearlSnare-2.wav';
             keyThreeSource = 'sounds/Rock/38-PorkpieSnare-4.wav';
@@ -211,7 +214,7 @@ options.forEach(o => {
             keySevenSource = 'sounds/Rock/46-SabianRockHatSemiOpen-1.wav';
             keyEightSource = 'sounds/Rock/48-SabianRockHatSwish-1.wav';
             keyNineSource = 'sounds/Rock/50-SabianAA16CrashChoke.wav';
-        } else if (selected.innerHTML === 'Dubstep') {
+        } else if (selected.text() === 'Dubstep') {
             keyOneSource = 'sounds/Dubstep/Claps (4).wav';
             keyTwoSource = 'sounds/Dubstep/Effect 1.wav';
             keyThreeSource = 'sounds/Dubstep/Effect 5.wav';
@@ -221,7 +224,7 @@ options.forEach(o => {
             keySevenSource = 'sounds/Dubstep/FX (9).wav';
             keyEightSource = 'sounds/Dubstep/Kick   (3).wav';
             keyNineSource = 'sounds/Dubstep/Tom (2).wav';
-        } else if (selected.innerHTML === 'Dr.Dre') {
+        } else if (selected.text() === 'Dr.Dre') {
             keyOneSource = 'sounds/DrDre/2Pac Guitar.wav';
             keyTwoSource = 'sounds/DrDre/2Pac Keys.wav';
             keyThreeSource = 'sounds/DrDre/6SO0C158.wav';
@@ -231,7 +234,7 @@ options.forEach(o => {
             keySevenSource = 'sounds/DrDre/Dre hit3.wav';
             keyEightSource = 'sounds/DrDre/Dre Keyz.wav';
             keyNineSource = 'sounds/DrDre/EMN Snare 1.wav';
-        } else if (selected.innerHTML === 'Kanye West') {
+        } else if (selected.text() === 'Kanye West') {
             keyOneSource = 'sounds/KanyeWest/B (14).wav';
             keyTwoSource = 'sounds/KanyeWest/B (17).wav';
             keyThreeSource = 'sounds/KanyeWest/B (18).wav';
